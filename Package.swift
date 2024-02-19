@@ -20,6 +20,9 @@ let package = Package(
             name: "SQLite",
             exclude: [
                 "Info.plist"
+            ],
+            swiftSettings: [
+                .define("SQLITE_ENABLE_JSON1")
             ]
         ),
         .testTarget(
